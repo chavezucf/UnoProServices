@@ -1,6 +1,6 @@
 /* Banner CSS */
 .banner-overlay {
-    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('../../../assets/images/kitchen.jpg');
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('../../../assets/images/repair.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left center;
@@ -11,29 +11,16 @@
     height: 600px;
 
 }
-.banner-logo {
-    max-width: 600px;
+.banner-title{
     margin: auto;
-    padding: 3.5em;
-}
-.banner-logo img {
-    width: 400px;
-}
-.btn:hover {
-    color: white !important;
-    background:black !important;
-}
-.blue-text {
-    color: #004696 !important;
+    padding: 1em;
+    font-size: 130px;
+    font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
 }
 
 .btn {
     font-weight: 700 !important;
     font-size: 1em;
-}
-
-.view {
-    max-height: 150px;
 }
 
 .welcome {
