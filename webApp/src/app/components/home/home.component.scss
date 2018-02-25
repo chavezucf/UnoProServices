@@ -1,14 +1,14 @@
 /* Banner CSS */
+
 .banner-overlay {
-    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('../../../assets/images/kitchen.jpg');
+    background: linear-gradient(rgba(30,0,0,.4), rgba(30,0,0,.4)), url('../../../assets/images/kitchen.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left center;
     background-attachment: fixed;
-    color: #ccc;
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom:20px;
-    height: 600px;
+    height: 700px;
 
 }
 .banner-logo {
@@ -21,10 +21,14 @@
 }
 .btn:hover {
     color: white !important;
-    background:black !important;
+    background:rgb(120, 20, 20)!important;
 }
 .blue-text {
-    color: #004696 !important;
+    color: rgb(20, 20, 120) !important;
+}
+
+.blue {
+    background: rgb(20, 20, 120) !important;
 }
 
 .btn {
@@ -32,18 +36,97 @@
     font-size: 1em;
 }
 
-.view {
-    max-height: 150px;
+.btn i{
+    margin-right: 10px; 
 }
 
-.welcome {
-    background: #FFF;
-    padding: 3em;
-    margin: 3em;
-    border-radius: 5px;
+.divder {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    color: #ccc;
+    padding-top: 20px;
+    padding-bottom:20px;
+    height: 350px;
+}
+.divder-container{
+    margin-top: 4em;
+    padding: 2em;
+}
+.divder h3 {
+    color:#eee;
+    font-family: 'Arima Madurai', cursive;
+    font-size: 50px;
 }
 
-.welcome h3 {
-    color:#000;
-    margin-bottom: 1em;
+.welcome-divder {
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url('../../../assets/images/blackwood2.jpg');
+}
+
+.quote-divder  {
+    background: linear-gradient(rgba(20, 20, 80, 0.5), rgba(20, 20, 80, 0.5)), url('../../../assets/images/blackwood2.jpg');
+
+}
+.quote-divder-container{
+    padding: 1em;
+}
+.banner {
+    color: #eee;
+    padding-top: 20px;
+    padding-bottom:20px;
+    height: 750px;
+}
+
+.banner-container {
+    margin-top: 5em;
+    padding: 2em;
+
+}
+
+.banner h3 {
+    color:#eee;
+    //font-family: 'Arima Madurai', cursive;
+    //font-family: 'Varela Round', sans-serif;
+    font-family: 'Comfortaa', cursive;
+    //font-family: 'Mukta Vaani', sans-serif;
+    text-decoration: underline;
+    font-size: 150px;
+    margin-bottom: 0.5em;
+}
+
+.service-banner  {
+    background: linear-gradient(rgba(30,0,0,.4), rgba(30,0,0,.4)), url('../../../assets/images/test/living3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.service-banner-list  {
+    margin-top: -3em;
+    margin-bottom: 3em;
+}
+
+.service-banner-list i{
+    margin: 10px; 
+}
+
+.booknow-banner  {
+    background: linear-gradient(rgba(30,0,0,.4),rgba(30,0,0,.4)), url('../../../assets/images/test/kitchen.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.faq-banner  {
+    background: linear-gradient(rgba(30,0,0,.4),rgba(30,0,0,.4)), url('../../../assets/images/test/living2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.about-banner  {
+    background: linear-gradient(rgba(30,0,0,.4),rgba(30,0,0,.4)), url('../../../assets/images/test/about.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
