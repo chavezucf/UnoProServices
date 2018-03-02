@@ -5,6 +5,11 @@ import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { trigger, state, style, transition, animate } from '@angular/animations';
 
 
 import { AppComponent } from './app.component';
@@ -15,11 +20,15 @@ import { FaqComponent } from './components/faq/faq.component';
 import { CleaningComponent } from './components/cleaning/cleaning.component';
 import { OldHomeComponent } from './components/old-home/old-home.component';
 import { ServicesComponent } from './components/services/services.component';
+import { AboutComponent } from './components/about/about.component';
+import { BooknowComponent } from './components/booknow/booknow.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'services', component: ServicesComponent},
   { path: 'faq', component: FaqComponent},
+  { path: 'booknow', component: BooknowComponent},
+  { path: 'about', component: AboutComponent},
   { path: 'homecleaning', component: OldHomeComponent}
 ];
 
@@ -32,12 +41,17 @@ const appRoutes: Routes = [
     FaqComponent,
     CleaningComponent,
     OldHomeComponent,
-    ServicesComponent
+    ServicesComponent,
+    AboutComponent,
+    BooknowComponent
   ],
   imports: [
     BrowserModule,
     MDBBootstrapModule.forRoot(),
-    RouterModule.forRoot(appRoutes)
+    NgbModule.forRoot(),
+    RouterModule.forRoot(appRoutes),
+    BrowserModule,
+    BrowserAnimationsModule 
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],
