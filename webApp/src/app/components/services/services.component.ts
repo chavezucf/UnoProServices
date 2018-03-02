@@ -1,37 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { trigger, state, style, transition, animate, animation } from '@angular/animations';
-import { fade } from '../../animations';
+import { fade, newFadeTransition, expandCollapse } from '../../animations';
 
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',
   styleUrls: ['./services.component.scss'],
   animations : [
-    fade
-    /*
-    trigger('fade', [
-      state('void', style({ opacity: 0 })),
-      transition('void <=> *', [
-        //style({ opacity: 0 }),
-        animate(2000)//style({backgroundColor: 'white', opacity: 1 }))
-      ])
-      
-      /*transition('void => *, * => void', [
-        //style({ opacity: 0 }),
-        animate(2000)//style({backgroundColor: 'white', opacity: 1 }))
-      ]),*/
-      /*
-      transition('void => *', [
-        //style({ opacity: 0 }),
-        animate(2000)//style({backgroundColor: 'white', opacity: 1 }))
-      ]),
-
-      transition('* => void', [
-        animate(2000)//, style({ opacity: 0 }))
-      ])
-
-    ])*/
+    fade,
+    newFadeTransition, 
+    expandCollapse 
   ]
 })
 export class ServicesComponent implements OnInit {
@@ -40,6 +19,9 @@ export class ServicesComponent implements OnInit {
     'Clean',
     'Apply'
   ]
+  name:string;
+  openCloseHome:string;
+  openCloseAnim:string;
 
   addItem(input: HTMLInputElement) {
     this.items.splice(0,0,input.value);
@@ -49,7 +31,18 @@ export class ServicesComponent implements OnInit {
     this.items.splice(index,1);
   }
   
-  constructor() { }
+  constructor() {
+    this.name = 'Angular!'
+    this.openCloseHome = 'close';
+    this.openCloseAnim = 'close';
+  }
+  openCloseHomePanel(): void {
+        this.openCloseHome = (this.openCloseHome == 'open') ? 'close' : 'open';
+    }
+
+    openReportsFilter(): void {
+      this.openCloseAnim = (this.openCloseAnim == 'open') ? 'close' : 'open';
+  }
 
   ngOnInit() {
   }

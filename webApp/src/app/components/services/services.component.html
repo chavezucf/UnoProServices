@@ -16,28 +16,73 @@
   <div class="container divder-container">
   </div>
 </section>
-
-<!-- Collapse Services -->
 <section class="collapse-services">
-  <div class="Home Cleaning" (click)="isCollapsedHomeCleaning = !isCollapsedHomeCleaning" [attr.aria-expanded]="!isCollapsed" aria-controls="homeCleaning">
-    <h1 @fade> Home Cleaning</h1>
-  </div>
-
-  <div id="homeCleaning" [ngbCollapse]="!isCollapsedHomeCleaning">
-    <div class="card">
-      <div class="card-body">
-        You can collapse this card by clicking Toggle
+  <div class="widget widget-Home">
+    <div class="widget-button" (click)="openCloseHomePanel()">
+      <h1 class="widget-button-title text-center">Home Cleaning
+        <i class="fa fa-circle" aria-hidden="true"></i>
+      </h1>
+    </div>
+    <div class="widget-pannel container" [@expandCollapse]='openCloseHome'>
+      <h2 class="widget-pannel-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio suscipit, saepe hic itaque excepturi sit a! Facere</h2>
+      <hr>
+      <div class="widget-pannel-content">
+        <h2 class="widget-pannel-title"> Basic </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio suscipit, saepe hic itaque excepturi sit a! Facere
+          ex rerum id assumenda quasi eaque inventore pariatur nihil velit est, perspiciatis voluptas!</p>
+        <h2 class="widget-pannel-title"> Normal </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio suscipit, saepe hic itaque excepturi sit a! Facere
+          ex rerum id assumenda quasi eaque inventore pariatur nihil velit est, perspiciatis voluptas!</p>
+        <h2 class="widget-pannel-title"> Premium </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio suscipit, saepe hic itaque excepturi sit a! Facere
+          ex rerum id assumenda quasi eaque inventore pariatur nihil velit est, perspiciatis voluptas!</p>
       </div>
     </div>
   </div>
-  
-  <input #itemInput class="form-control" (keyup.enter)="addItem(itemInput)">
 
-  <div *ngIf="items" class="list-group">
-    <button type="button" 
-      @fade
-      *ngFor="let item of items"
-      (click)="removeItem(item)"
-    >{{item}}</button>
+  <div class="widget">
+    <div class="widget-button" (click)="openReportsFilter()">
+      <h1 class="widget-button-title text-center">Repairs/Improvements
+        <i class="fa fa-circle" aria-hidden="true"></i>
+      </h1>
+    </div>
+    <div class="widget-pannel container" *ngIf="openCloseAnim" [@expandCollapse]='openCloseAnim'>
+        <h2 class="widget-pannel-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio suscipit, saepe hic itaque excepturi sit a! Facere</h2>
+        <hr>
+        <div class="widget-pannel-content">
+          <h2 class="widget-pannel-title"> Basic </h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio suscipit, saepe hic itaque excepturi sit a! Facere
+            ex rerum id assumenda quasi eaque inventore pariatur nihil velit est, perspiciatis voluptas!</p>
+          <h2 class="widget-pannel-title"> Normal </h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio suscipit, saepe hic itaque excepturi sit a! Facere
+            ex rerum id assumenda quasi eaque inventore pariatur nihil velit est, perspiciatis voluptas!</p>
+          <h2 class="widget-pannel-title"> Premium </h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio suscipit, saepe hic itaque excepturi sit a! Facere
+            ex rerum id assumenda quasi eaque inventore pariatur nihil velit est, perspiciatis voluptas!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="widget">
+    <div class="widget-button" (click)="openReportsFilter()">
+      <h1 class="widget-button-title text-center">Installations
+        <i class="fa fa-circle" aria-hidden="true"></i>
+      </h1>
+    </div>
+    <div class="widget-pannel" *ngIf="openCloseAnim" [@expandCollapse]='openCloseAnim'>
+        <h2 class="widget-pannel-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio suscipit, saepe hic itaque excepturi sit a! Facere</h2>
+        <hr>
+        <div class="widget-pannel-content">
+          <h2 class="widget-pannel-title"> Basic </h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio suscipit, saepe hic itaque excepturi sit a! Facere
+            ex rerum id assumenda quasi eaque inventore pariatur nihil velit est, perspiciatis voluptas!</p>
+          <h2 class="widget-pannel-title"> Normal </h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio suscipit, saepe hic itaque excepturi sit a! Facere
+            ex rerum id assumenda quasi eaque inventore pariatur nihil velit est, perspiciatis voluptas!</p>
+          <h2 class="widget-pannel-title"> Premium </h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio suscipit, saepe hic itaque excepturi sit a! Facere
+            ex rerum id assumenda quasi eaque inventore pariatur nihil velit est, perspiciatis voluptas!</p>
+      </div>
+    </div>
   </div>
 </section>
