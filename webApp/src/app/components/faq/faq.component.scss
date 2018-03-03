@@ -3,7 +3,7 @@
     color: #eee;
     padding-top: 20px;
     padding-bottom:20px;
-    height: 650px;
+    height: 500px;
 }
 
 .banner-container {
@@ -20,20 +20,20 @@
     margin-bottom: 0.5em;
 }
 
-.service-banner  {
-    background: linear-gradient(rgba(30,0,0,.4), rgba(30,0,0,.4)), url('../../../assets/images/test/living2.jpg');
+.faq-banner  {
+    background: linear-gradient(rgba(30,0,0,.4),rgba(30,0,0,.4)), url('../../../assets/images/test/living2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
 }
 
-.service-banner-list  {
+.faq-banner-list  {
     margin-top: -3em;
     margin-bottom: 3em;
 }
 
-.service-banner-list i{
+.faq-banner-list i{
     margin: 10px; 
 }
 
@@ -61,7 +61,7 @@
     color: #ccc;
     padding-top: 20px;
     padding-bottom:20px;
-    height: 350px;
+    height: 100px;
 }
 .divder-container{
     margin-top: 4em;
@@ -73,13 +73,54 @@
     font-size: 50px;
 }
 
+.divder-list  {
+    color: #eee;
+    margin-top: -4em;
+    margin-bottom: 3em;
+}
+
+.divder-list i{
+    //color: rgb(20, 20, 120) !important;
+    margin: 10px; 
+}
+
 .welcome-divder {
-    background: linear-gradient(rgba(120,20,20,.8), rgba(120,20,20,.8)), url('../../../assets/images/blackwood2.jpg');
+    background: linear-gradient(rgba(20, 20, 80, 0.5), rgba(20, 20, 80, 0.5)), url('../../../assets/images/blackwood2.jpg');
+
 }
 
-
-//FAQ
-.question {
-    margin-bottom: 5em;
-    margin-top: 5em;
+.collapse-faq {
+    padding-bottom: 2em;
 }
+
+.widget {
+}
+
+.widget-button {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    cursor: pointer;
+}
+
+.widget-button:hover, .widget-button-stay {
+    background: linear-gradient(rgba(120,20,20,.4), rgba(30,0,0,.4)), url('../../../assets/images/blackwood2.jpg');;
+    color: white;
+}
+
+.widget-pannel {
+    padding-top: 20px;
+    padding-bottom: 3em;
+}
+
+.widget-pannel-description{
+    padding-bottom: 20px;
+}
+
+.widget-pannel-content{
+
+}
+
+hr {
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #ffffff;
+ }
