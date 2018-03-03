@@ -3,7 +3,7 @@
     color: #eee;
     padding-top: 20px;
     padding-bottom:20px;
-    height: 650px;
+    height: 500px;
 }
 
 .banner-container {
@@ -73,29 +73,63 @@
     font-size: 50px;
 }
 
+.divder-list  {
+    color: #eee;
+    margin-top: -4em;
+    margin-bottom: 3em;
+}
+
+.divder-list i{
+    //color: rgb(20, 20, 120) !important;
+    margin: 10px; 
+}
+
 .welcome-divder {
-    background: linear-gradient(rgba(200,200,200,.8), rgba(200,200,200,.8)), url('../../../assets/images/blackwood2.jpg');
+    background: linear-gradient(rgba(20, 20, 80, 0.5), rgba(20, 20, 80, 0.5)), url('../../../assets/images/blackwood2.jpg');
+
 }
 
 .collapse-services {
-    background: orange;
-    padding-top: 2em;
-    padding-bottom: 4em;
+    padding-bottom: 2em;
 }
 
 .widget {
-    background: red;
 }
 
 .widget-button {
-    background: blue;
     padding-top: 3em;
     padding-bottom: 3em;
     cursor: pointer;
 }
-.widget-button:hover {
-    background: linear-gradient(rgba(200,200,200,.1), rgba(200,200,200,.1)), url('../../../assets/images/repair.jpg');
+
+.widget-button-home:hover, .widget-button-home-stay {
+    background: linear-gradient(rgba(30,0,0,.4), rgba(30,0,0,.4)),url('../../../assets/images/maintenance.jpg');
     color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.widget-button-repair:hover, .widget-button-repair-stay {
+    background: linear-gradient(rgba(30,0,0,.4), rgba(30,0,0,.4)), url('../../../assets/images/repair.jpg');
+    color: white;
+    background-position: center center;
+}
+
+.widget-button-installation:hover, .widget-button-installation-stay {
+    background: linear-gradient(rgba(30,0,0,.4), rgba(30,0,0,.4)), url('../../../assets/images/kitchen.jpg');
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.widget-button-maintenance:hover, .widget-button-maintenance-stay {
+    background: linear-gradient(rgba(30,0,0,.4), rgba(30,0,0,.4)), url('../../../assets/images/services2.jpg');
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
 }
 
 .widget-pannel {
