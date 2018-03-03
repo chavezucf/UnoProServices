@@ -37,6 +37,24 @@
     margin: 10px; 
 }
 
+
+@media (max-width:568px) {
+    .banner h3 {
+        font-size: 75px;
+        margin-bottom: 1.5em;
+    }
+}
+
+@media (min-width:568px) and (max-width:868px) {
+
+    .banner h3 {
+        font-size: 95px;
+        margin-bottom: 1.0em;
+    
+    }
+}
+
+
 .btn:hover {
     color: white !important;
     background:rgb(120, 20, 20)!important;
@@ -67,15 +85,15 @@
     margin-top: 4em;
     padding: 2em;
 }
-.divder h3 {
+.divder h4 {
     color:#eee;
     font-family: 'Arima Madurai', cursive;
-    font-size: 50px;
+    font-size: 25px;
 }
 
 .divder-list  {
     color: #eee;
-    margin-top: -4em;
+    margin-top: -4.25em;
     margin-bottom: 3em;
 }
 
@@ -83,6 +101,26 @@
     //color: rgb(20, 20, 120) !important;
     margin: 10px; 
 }
+
+@media (max-width:568px) {
+    .divder h4 {
+        font-size: 15px;
+    }
+    .divder-list  {
+        margin-top: -7em;
+    }
+}
+
+@media (min-width:568px) and (max-width:868px) {
+
+    .divder h4 {
+        font-size: 20px;
+    }
+    .divder-list  {
+        margin-top: -5.5em;
+    }
+}
+
 
 .welcome-divder {
     background: linear-gradient(rgba(20, 20, 80, 0.5), rgba(20, 20, 80, 0.5)), url('../../../assets/images/blackwood2.jpg');
@@ -99,6 +137,7 @@
     padding-top: 3em;
     padding-bottom: 3em;
     cursor: pointer;
+    font-family: 'Comfortaa', cursive;
 }
 
 .widget-button-home:hover, .widget-button-home-stay {

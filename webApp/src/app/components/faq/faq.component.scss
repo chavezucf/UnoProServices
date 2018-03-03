@@ -37,6 +37,23 @@
     margin: 10px; 
 }
 
+
+@media (max-width:568px) {
+    .banner h3 {
+        font-size: 75px;
+        margin-bottom: 1.5em;
+    }
+}
+
+@media (min-width:568px) and (max-width:868px) {
+
+    .banner h3 {
+        font-size: 95px;
+        margin-bottom: 1.0em;
+    
+    }
+}
+
 .btn:hover {
     color: white !important;
     background:rgb(120, 20, 20)!important;
