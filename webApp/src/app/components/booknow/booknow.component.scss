@@ -1,0 +1,107 @@
+/* Banner CSS */
+.banner {
+    color: #eee;
+    padding-top: 20px;
+    padding-bottom:20px;
+    height: 500px;
+}
+
+.banner-container {
+    margin-top: 5em;
+    padding: 2em;
+
+}
+
+.banner h3 {
+    color:#eee;
+    font-family: 'Comfortaa', cursive;
+    text-decoration: underline;
+    font-size: 150px;
+    margin-bottom: 0.5em;
+}
+
+.book-banner  {
+    background: linear-gradient(rgba(30,0,0,.4),rgba(30,0,0,.4)), url('../../../assets/images/test/kitchen.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.faq-banner-list  {
+    margin-top: -3em;
+    margin-bottom: 3em;
+}
+
+.faq-banner-list i{
+    margin: 10px; 
+}
+
+
+@media (max-width:568px) {
+    .banner h3 {
+        font-size: 75px;
+        margin-bottom: 1.5em;
+    }
+}
+
+@media (min-width:568px) and (max-width:868px) {
+
+    .banner h3 {
+        font-size: 95px;
+        margin-bottom: 1.0em;
+    
+    }
+}
+
+
+.btn:hover {
+    color: white !important;
+    background:rgb(120, 20, 20)!important;
+}
+.blue-text {
+    color: rgb(20, 20, 120) !important;
+}
+
+.blue {
+    background: rgb(20, 20, 120) !important;
+}
+
+.btn {
+    font-weight: 700 !important;
+    font-size: 1em;
+}
+
+.divder {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    color: #ccc;
+    padding-top: 20px;
+    padding-bottom:20px;
+    height: 100px;
+}
+.divder-container{
+    margin-top: 4em;
+    padding: 2em;
+}
+.divder h3 {
+    color:#eee;
+    font-family: 'Arima Madurai', cursive;
+    font-size: 50px;
+}
+
+.divder-list  {
+    color: #eee;
+    margin-top: -4em;
+    margin-bottom: 3em;
+}
+
+.divder-list i{
+    margin: 10px; 
+}
+
+.welcome-divder {
+    background: linear-gradient(rgba(20, 20, 80, 0.5), rgba(20, 20, 80, 0.5)), url('../../../assets/images/blackwood2.jpg');
+
+}
