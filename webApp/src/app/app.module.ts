@@ -10,14 +10,14 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 
+import { environment } from '../environments/environment';
+import { AngularFireModule } from 'angularfire2';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { FaqComponent } from './components/faq/faq.component';
-import { CleaningComponent } from './components/cleaning/cleaning.component';
-import { OldHomeComponent } from './components/old-home/old-home.component';
 import { ServicesComponent } from './components/services/services.component';
 import { AboutComponent } from './components/about/about.component';
 import { BooknowComponent } from './components/booknow/booknow.component';
@@ -28,7 +28,6 @@ const appRoutes: Routes = [
   { path: 'faq', component: FaqComponent},
   { path: 'booknow', component: BooknowComponent},
   { path: 'about', component: AboutComponent},
-  { path: 'homecleaning', component: OldHomeComponent}
 ];
 
 @NgModule({
@@ -38,8 +37,6 @@ const appRoutes: Routes = [
     FooterComponent,
     HomeComponent,
     FaqComponent,
-    CleaningComponent,
-    OldHomeComponent,
     ServicesComponent,
     AboutComponent,
     BooknowComponent
@@ -48,7 +45,7 @@ const appRoutes: Routes = [
     BrowserModule,
     MDBBootstrapModule.forRoot(),
     RouterModule.forRoot(appRoutes),
-    BrowserModule,
+    AngularFireModule.initializeApp(environment.firebase),
     BrowserAnimationsModule 
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
