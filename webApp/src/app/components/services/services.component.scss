@@ -25,7 +25,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
 }
 
 .service-banner-list  {
@@ -53,6 +52,14 @@
     
     }
 }
+
+@media (min-width:868px) {
+
+    .service-banner {
+        background-attachment: fixed;
+    }
+}
+
 
 
 .btn:hover {
@@ -140,7 +147,7 @@
     font-family: 'Comfortaa', cursive;
 }
 
-.widget-button-home:hover, .widget-button-home-stay {
+.widget-button-home-stay {
     background: linear-gradient(rgba(30,0,0,.4), rgba(30,0,0,.4)),url('../../../assets/images/maintenance.jpg');
     color: white;
     background-repeat: no-repeat;
@@ -148,13 +155,13 @@
     background-position: center center;
 }
 
-.widget-button-repair:hover, .widget-button-repair-stay {
+.widget-button-repair-stay {
     background: linear-gradient(rgba(30,0,0,.4), rgba(30,0,0,.4)), url('../../../assets/images/repair.jpg');
     color: white;
     background-position: center center;
 }
 
-.widget-button-installation:hover, .widget-button-installation-stay {
+.widget-button-installation-stay {
     background: linear-gradient(rgba(30,0,0,.4), rgba(30,0,0,.4)), url('../../../assets/images/kitchen.jpg');
     color: white;
     background-repeat: no-repeat;
@@ -162,12 +169,45 @@
     background-position: center center;
 }
 
-.widget-button-maintenance:hover, .widget-button-maintenance-stay {
+.widget-button-maintenance-stay {
     background: linear-gradient(rgba(30,0,0,.4), rgba(30,0,0,.4)), url('../../../assets/images/services2.jpg');
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
+}
+
+@media (min-width:1000px) {
+
+    .widget-button-home:hover{
+        background: linear-gradient(rgba(30,0,0,.4), rgba(30,0,0,.4)),url('../../../assets/images/maintenance.jpg');
+        color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    
+    .widget-button-repair:hover{
+        background: linear-gradient(rgba(30,0,0,.4), rgba(30,0,0,.4)), url('../../../assets/images/repair.jpg');
+        color: white;
+        background-position: center center;
+    }
+    
+    .widget-button-installation:hover{
+        background: linear-gradient(rgba(30,0,0,.4), rgba(30,0,0,.4)), url('../../../assets/images/kitchen.jpg');
+        color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    
+    .widget-button-maintenance:hover{
+        background: linear-gradient(rgba(30,0,0,.4), rgba(30,0,0,.4)), url('../../../assets/images/services2.jpg');
+        color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+    }
 }
 
 .widget-pannel {

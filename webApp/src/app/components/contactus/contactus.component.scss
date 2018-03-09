@@ -20,19 +20,19 @@
     margin-bottom: 0.5em;
 }
 
-.book-banner  {
+.contactus-banner  {
     background: linear-gradient(rgba(30,0,0,.4),rgba(30,0,0,.4)), url('../../../assets/images/test/kitchen.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-.book-banner-list  {
+.contactus-banner-list  {
     margin-top: -3em;
     margin-bottom: 3em;
 }
 
-.book-banner-list i{
+.contactus-banner-list i{
     margin: 10px; 
 }
 
@@ -52,13 +52,13 @@
     
     }
 }
-
 @media (min-width:1000px) {
 
-    .book-banner {
+    .contactus-banner {
         background-attachment: fixed;
     }
 }
+
 
 
 .btn:hover {
@@ -110,4 +110,10 @@
 .welcome-divder {
     background: linear-gradient(rgba(20, 20, 80, 0.5), rgba(20, 20, 80, 0.5)), url('../../../assets/images/blackwood2.jpg');
 
+}
+
+.form-container {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 4em;
 }

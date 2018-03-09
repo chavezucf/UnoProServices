@@ -20,20 +20,19 @@
     margin-bottom: 0.5em;
 }
 
-.faq-banner  {
+.about-banner  {
     background: linear-gradient(rgba(30,0,0,.4),rgba(30,0,0,.4)), url('../../../assets/images/test/about.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
 }
 
-.faq-banner-list  {
+.about-banner-list  {
     margin-top: -3em;
     margin-bottom: 3em;
 }
 
-.faq-banner-list i{
+.about-banner-list i{
     margin: 10px; 
 }
 
@@ -52,6 +51,14 @@
     
     }
 }
+
+@media (min-width:1000px) {
+
+    .about-banner {
+        background-attachment: fixed;
+    }
+}
+
 
 .btn:hover {
     color: white !important;

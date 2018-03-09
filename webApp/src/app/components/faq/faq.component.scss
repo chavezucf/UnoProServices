@@ -25,7 +25,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
 }
 
 .faq-banner-list  {
@@ -53,6 +52,14 @@
     
     }
 }
+
+@media (min-width:1000px) {
+
+    .faq-banner {
+        background-attachment: fixed;
+    }
+}
+
 
 .btn:hover {
     color: white !important;
@@ -118,9 +125,17 @@
     cursor: pointer;
 }
 
-.widget-button:hover, .widget-button-stay {
+.widget-button-stay {
     background: linear-gradient(rgba(120,20,20,.4), rgba(30,0,0,.4)), url('../../../assets/images/blackwood2.jpg');;
     color: white;
+}
+
+@media (min-width:1000px) {
+
+    .widget-button:hover{
+        background: linear-gradient(rgba(120,20,20,.4), rgba(30,0,0,.4)), url('../../../assets/images/blackwood2.jpg');;
+        color: white;
+    }
 }
 
 .widget-pannel {

@@ -21,6 +21,7 @@ import { FaqComponent } from './components/faq/faq.component';
 import { ServicesComponent } from './components/services/services.component';
 import { AboutComponent } from './components/about/about.component';
 import { BooknowComponent } from './components/booknow/booknow.component';
+import { ContactusComponent } from './components/contactus/contactus.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
@@ -28,6 +29,7 @@ const appRoutes: Routes = [
   { path: 'faq', component: FaqComponent},
   { path: 'booknow', component: BooknowComponent},
   { path: 'about', component: AboutComponent},
+  { path: 'contactus', component: ContactusComponent},
 ];
 
 @NgModule({
@@ -39,7 +41,8 @@ const appRoutes: Routes = [
     FaqComponent,
     ServicesComponent,
     AboutComponent,
-    BooknowComponent
+    BooknowComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,
