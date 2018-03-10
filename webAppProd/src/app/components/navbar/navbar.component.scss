@@ -1,0 +1,49 @@
+img {
+    width: 50px;
+    margin: 0;
+    padding: 0;
+    margin-right: 1em;
+}
+.navbar-brand {
+    font-family: 'Comfortaa', cursive;
+    //text-decoration: underline;
+}
+
+.nav-item:hover {
+    color: white !important;
+    background:rgb(120, 20, 20)!important;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+.navbar-brand:hover {
+    color: white !important;
+    text-decoration: underline;
+}
+
+.blue {
+    background: rgb(20, 20, 120) !important;
+    color: white !important;
+    margin: -14px 25px ;
+    border: black;
+}
+
+button {
+    font-weight: 700 !important;
+    font-size: 1em;
+}
+
+button i{
+    margin-right: 10px; 
+}
+
+button:hover {
+    color: white !important;
+    background:rgb(120, 20, 20)!important;
+}
+
+@media (max-width:991px) {
+    .blue {
+        border-radius: 5px;
+        margin: 14px 25px ;
+    }
+}

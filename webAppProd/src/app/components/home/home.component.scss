@@ -1,0 +1,209 @@
+/* Banner CSS */
+
+.banner-overlay {
+    background: linear-gradient(rgba(30,0,0,.4), rgba(30,0,0,.4)), url('../../../assets/images/kitchen.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    padding-top: 40px;
+    padding-bottom:20px;
+    height: 700px;
+
+}
+
+.banner-logo {
+    max-width: 600px;
+    margin: auto;
+    padding: 3.5em;
+}
+
+.banner-logo img {
+    width: 400px;
+}
+
+@media (max-width:568px) {
+    .banner-overlay {
+        height: 600px;
+    
+    }
+    .banner-logo {
+        max-width: 500px;
+        margin: auto;
+        padding: 1.5em;
+    }
+    
+    .banner-logo img {
+        width: 300px;
+    }
+}
+
+@media (min-width:1000px) {
+
+    .banner-overlay {
+        background-attachment: fixed;
+    }
+}
+
+.btn:hover {
+    color: white !important;
+    background:rgb(120, 20, 20)!important;
+}
+.blue-text {
+    color: rgb(20, 20, 120) !important;
+}
+
+.blue {
+    background: rgb(20, 20, 120) !important;
+}
+
+.btn {
+    font-weight: 700 !important;
+    font-size: 1em;
+}
+
+.btn i{
+    margin-right: 10px; 
+}
+
+.divder {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    color: #ccc;
+    padding-top: 20px;
+    padding-bottom:20px;
+    height: 350px;
+}
+.divder-container{
+    margin-top: 2em;
+    padding: 2em;
+}
+.divder h3 {
+    color: #ccc;
+    font-family: 'Arima Madurai', cursive;
+    font-size: 50px;
+}
+
+@media (max-width:568px) {
+    .divder {
+        height: 300px;
+    }
+
+    .divder-small {
+        height: 175px;
+    }
+    .divder-container{
+        margin-top: 1em;
+        padding: 0.5em;
+    }
+    .divder h3 {
+        font-size: 30px;
+    }
+}
+
+@media (min-width:568px) and (max-width:868px) {
+
+    .divder-small {
+        height: 225px;
+    }
+
+    .divder-container{
+        margin-top: 1em;
+        padding: 0.5em;
+    }
+    .divder h3 {
+        font-size: 40px;
+    }
+}
+
+
+.welcome-divder {
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url('../../../assets/images/blackwood2.jpg');
+}
+
+.quote-divder  {
+    background: linear-gradient(rgba(20, 20, 80, 0.5), rgba(20, 20, 80, 0.5)), url('../../../assets/images/blackwood2.jpg');
+
+}
+.quote-divder-container{
+    padding: 1em;
+}
+.banner {
+    color: #eee;
+    padding-top: 20px;
+    padding-bottom:20px;
+    height: 750px;
+}
+
+.banner-container {
+    margin-top: 5em;
+    padding: 2em;
+
+}
+
+.banner h3 {
+    color:#eee;
+    font-family: 'Comfortaa', cursive;
+    text-decoration: underline;
+    font-size: 150px;
+    margin-bottom: 0.5em;
+}
+
+.service-banner  {
+    background: linear-gradient(rgba(30,0,0,.4), rgba(30,0,0,.4)), url('../../../assets/images/test/living3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.service-banner-list  {
+    margin-top: -3em;
+    margin-bottom: 3em;
+}
+
+.service-banner-list i{
+    margin: 10px; 
+}
+
+.booknow-banner  {
+    background: linear-gradient(rgba(30,0,0,.4),rgba(30,0,0,.4)), url('../../../assets/images/test/kitchen.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.faq-banner  {
+    background: linear-gradient(rgba(30,0,0,.4),rgba(30,0,0,.4)), url('../../../assets/images/test/living2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.about-banner  {
+    background: linear-gradient(rgba(30,0,0,.4),rgba(30,0,0,.4)), url('../../../assets/images/test/about.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+@media (max-width:568px) {
+    .banner h3 {
+        font-size: 50px;
+        margin-bottom: 1.5em;
+    }
+    .service-banner-list  {
+        margin-bottom: 1.5em;
+    }
+
+    .banner {
+        height: 500px;
+    }
+}
+
+@media (min-width:568px) and (max-width:868px) {
+    .banner h3 {
+        font-size: 95px;
+        margin-bottom: 1.0em;
+    
+    }
+}

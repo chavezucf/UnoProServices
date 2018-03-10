@@ -1,0 +1,37 @@
+[debug] [2018-03-10T13:32:06.708Z] ----------------------------------------------------------------------
+[debug] [2018-03-10T13:32:06.711Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-03-10T13:32:06.712Z] CLI Version:   3.17.4
+[debug] [2018-03-10T13:32:06.712Z] Platform:      darwin
+[debug] [2018-03-10T13:32:06.712Z] Node Version:  v6.11.0
+[debug] [2018-03-10T13:32:06.713Z] Time:          Sat Mar 10 2018 08:32:06 GMT-0500 (EST)
+[debug] [2018-03-10T13:32:06.713Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-10T13:32:06.734Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-10T13:32:06.735Z] > authorizing via signed-in user
+[debug] [2018-03-10T13:32:06.737Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-10T13:32:06.738Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/XVTzNhBcAbCghVUnvaW8ScuB38Wm5Uulc4Dpc1qsFm8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sat Mar 10 2018 08:32:06 GMT-0500 (EST)
+[debug] [2018-03-10T13:32:07.077Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-10T13:32:07.089Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/unoproservicesweb  
+  
+ Sat Mar 10 2018 08:32:07 GMT-0500 (EST)
+[debug] [2018-03-10T13:32:07.525Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-10T13:32:07.527Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/unoproservicesweb/tokens  
+  
+ Sat Mar 10 2018 08:32:07 GMT-0500 (EST)
+[debug] [2018-03-10T13:32:07.977Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'unoproservicesweb'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing dist directory for upload...
+[debug] [2018-03-10T13:32:10.613Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/unoproservicesweb/uploads/-L7F67_VgY0fs2QPJERC?fileCount=65&message=  
+  
+ Sat Mar 10 2018 08:32:10 GMT-0500 (EST)
+[debug] [2018-03-10T13:33:35.930Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-10T13:33:35.935Z] [hosting] .tgz uploaded successfully, waiting for extraction

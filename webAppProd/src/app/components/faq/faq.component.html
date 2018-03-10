@@ -1,0 +1,80 @@
+<!-- FAQ Banner -->
+<section class="faq-banner banner">
+  <div class="container banner-container text-center">
+    <h3 class="banner-title">FAQ </h3>
+    <h4 class="faw-banner-list"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. A dolorem quis aliquid </h4>
+  </div>
+</section>
+
+<!-- Welcome Divder -->
+<section class="divder welcome-divder z-depth-2">
+  <div class="container divder-container">
+    <h4 class="divder-list text-center">
+      <i class="fa fa-circle" aria-hidden="true"></i> Frequently Asked Questions
+    </h4>
+  </div>
+</section>
+
+<!-- Collapse FAQ -->
+<section class="collapse-faq">
+  <!-- What is the avg time? Widget [0]-->
+  <div class="widget">
+    <div class="widget-button z-depth-2 " [ngClass]="{ 'widget-button-stay' : 'open' == openCloseAll[0] }" (click)="openCloseWidget(0)">
+      <h3 class="widget-button-title text-center">What is the avg time?</h3>
+    </div>
+    <div class="widget-pannel container " [@expandCollapse]='openCloseAll[0]'>
+      <div class="widget-pannel-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio suscipit, saepe hic itaque excepturi sit a! Facere
+          ex rerum id assumenda quasi eaque inventore pariatur nihil velit est, perspiciatis voluptas!</p>
+      </div>
+    </div>
+  </div>
+  <!-- Where do you do business? Widget[1]-->
+  <div class="widget">
+    <div class="widget-button z-depth-2 " [ngClass]="{ 'widget-button-stay' : 'open' == openCloseAll[1] }" (click)="openCloseWidget(1)">
+      <h3 class="widget-button-title text-center">Where do you do business?</h3>
+    </div>
+    <div class="widget-pannel container " [@expandCollapse]='openCloseAll[1]'>
+      <div class="widget-pannel-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio suscipit, saepe hic itaque excepturi sit a! Facere
+          ex rerum id assumenda quasi eaque inventore pariatur nihil velit est, perspiciatis voluptas!</p>
+      </div>
+    </div>
+  </div>
+  <!-- Do you do military discount? Widget [2]-->
+  <div class="widget">
+    <div class="widget-button z-depth-2 " [ngClass]="{ 'widget-button-stay' : 'open' == openCloseAll[2] }" (click)="openCloseWidget(2)">
+      <h3 class="widget-button-title text-center">Do you do military discount?</h3>
+    </div>
+    <div class="widget-pannel container " [@expandCollapse]='openCloseAll[2]'>
+      <div class="widget-pannel-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio suscipit, saepe hic itaque excepturi sit a! Facere
+          ex rerum id assumenda quasi eaque inventore pariatur nihil velit est, perspiciatis voluptas!</p>
+      </div>
+    </div>
+  </div>
+  <!-- How do I sign up? Widget [3]-->
+  <div class="widget">
+    <div class="widget-button z-depth-2 " [ngClass]="{ 'widget-button-stay' : 'open' == openCloseAll[3] }" (click)="openCloseWidget(3)">
+      <h3 class="widget-button-title text-center">How do I sign up? </h3>
+    </div>
+    <div class="widget-pannel container " [@expandCollapse]='openCloseAll[3]'>
+      <div class="widget-pannel-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio suscipit, saepe hic itaque excepturi sit a! Facere
+          ex rerum id assumenda quasi eaque inventore pariatur nihil velit est, perspiciatis voluptas!</p>
+      </div>
+    </div>
+  </div>
+  <!-- How far in advance can I sign up? Widget [4]-->
+  <div class="widget">
+    <div class="widget-button z-depth-2 " [ngClass]="{ 'widget-button-stay' : 'open' == openCloseAll[4] }" (click)="openCloseWidget(4)">
+      <h3 class="widget-button-title text-center">How far in advance can I sign up?</h3>
+    </div>
+    <div class="widget-pannel container " [@expandCollapse]='openCloseAll[4]'>
+      <div class="widget-pannel-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio suscipit, saepe hic itaque excepturi sit a! Facere
+          ex rerum id assumenda quasi eaque inventore pariatur nihil velit est, perspiciatis voluptas!</p>
+      </div>
+    </div>
+  </div>
+</section>
