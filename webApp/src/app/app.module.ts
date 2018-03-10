@@ -11,7 +11,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 
 import { environment } from '../environments/environment';
+import * as firebase from 'firebase/app';
 import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFirestore, AngularFirestoreDocument } from 'angularfire2/firestore';
+
+import { AuthService } from './core/auth.service';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -22,6 +27,7 @@ import { ServicesComponent } from './components/services/services.component';
 import { AboutComponent } from './components/about/about.component';
 import { BooknowComponent } from './components/booknow/booknow.component';
 import { ContactusComponent } from './components/contactus/contactus.component';
+import { AdminloginComponent } from './components/adminlogin/adminlogin.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
@@ -30,6 +36,7 @@ const appRoutes: Routes = [
   { path: 'booknow', component: BooknowComponent},
   { path: 'about', component: AboutComponent},
   { path: 'contactus', component: ContactusComponent},
+  { path: 'adminlogin', component: AdminloginComponent},
 ];
 
 @NgModule({
@@ -42,17 +49,19 @@ const appRoutes: Routes = [
     ServicesComponent,
     AboutComponent,
     BooknowComponent,
-    ContactusComponent
+    ContactusComponent,
+    AdminloginComponent
   ],
   imports: [
     BrowserModule,
     MDBBootstrapModule.forRoot(),
     RouterModule.forRoot(appRoutes),
     AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
     BrowserAnimationsModule 
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
