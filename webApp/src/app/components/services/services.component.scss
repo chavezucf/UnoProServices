@@ -110,6 +110,11 @@
 }
 
 @media (max-width:568px) {
+
+    .divder {
+        display: none;
+    }
+    
     .divder h4 {
         font-size: 15px;
     }
@@ -226,6 +231,9 @@
     }
     .widget-pannel-title{
         font-size: 22px;
+    }
+    .widget-button-title{
+        font-size: 25px;
     }
 }
 

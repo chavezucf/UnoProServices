@@ -2,7 +2,7 @@
 <section class="faq-banner banner">
   <div class="container banner-container text-center">
     <h3 class="banner-title">FAQ </h3>
-    <h4 class="faw-banner-list"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. A dolorem quis aliquid </h4>
+    <h4 class="faq-banner-list">Answers to questions you might have! </h4>
   </div>
 </section>
 
@@ -17,62 +17,58 @@
 
 <!-- Collapse FAQ -->
 <section class="collapse-faq">
-  <!-- What is the avg time? Widget [0]-->
+  <!-- Can I do a one time Cleaning Home Service? [0]-->
   <div class="widget">
     <div class="widget-button z-depth-2 " [ngClass]="{ 'widget-button-stay' : 'open' == openCloseAll[0] }" (click)="openCloseWidget(0)">
-      <h3 class="widget-button-title text-center">Can I do a one time Cleaning Home Service?</h3>
+      <h3 class="widget-button-title text-center">Can I do a one time Home Cleaning Service?</h3>
     </div>
     <div class="widget-pannel container " [@expandCollapse]='openCloseAll[0]'>
-      <div class="widget-pannel-content col-md-6 offset-md-3">
+      <div class="widget-pannel-description col-md-8 offset-md-2">
         <p>Absolutely, we provide services to meet all your needs. If you only need a one time service we can do it although we definitely recommend that you at least do a monthly service.</p>
       </div>
     </div>
   </div>
-  <!-- Where do you do business? Widget[1]-->
+  <!-- Do I need a Home Cleaning Service to do a Repair Service? Widget[1]-->
   <div class="widget">
     <div class="widget-button z-depth-2 " [ngClass]="{ 'widget-button-stay' : 'open' == openCloseAll[1] }" (click)="openCloseWidget(1)">
-      <h3 class="widget-button-title text-center">Where do you do business?</h3>
+      <h3 class="widget-button-title text-center">Do I need a Home Cleaning Service to do a Repair Service?</h3>
     </div>
     <div class="widget-pannel container " [@expandCollapse]='openCloseAll[1]'>
-      <div class="widget-pannel-content">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio suscipit, saepe hic itaque excepturi sit a! Facere
-          ex rerum id assumenda quasi eaque inventore pariatur nihil velit est, perspiciatis voluptas!</p>
+      <div class="widget-pannel-description col-md-8 offset-md-2">
+        <p>You do not need to have a recurring House Cleaning Service to request a Repair Service, but all of our recurring customers do receive a discount on all Repair Services.</p>
       </div>
     </div>
   </div>
   <!-- Do you do military discount? Widget [2]-->
   <div class="widget">
     <div class="widget-button z-depth-2 " [ngClass]="{ 'widget-button-stay' : 'open' == openCloseAll[2] }" (click)="openCloseWidget(2)">
-      <h3 class="widget-button-title text-center">Do you do military discount?</h3>
+      <h3 class="widget-button-title text-center">Do you do any military discounts?</h3>
     </div>
     <div class="widget-pannel container " [@expandCollapse]='openCloseAll[2]'>
-      <div class="widget-pannel-content">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio suscipit, saepe hic itaque excepturi sit a! Facere
-          ex rerum id assumenda quasi eaque inventore pariatur nihil velit est, perspiciatis voluptas!</p>
+      <div class="widget-pannel-description col-md-8 offset-md-2">
+        <p> We offer a discount to any recurring customer, who is active duty military or senior citizens, to both our Home Cleaning Services and Maintenance Services.</p>
       </div>
     </div>
   </div>
-  <!-- How do I sign up? Widget [3]-->
+  <!-- Do I need to sign a contract? [3]-->
   <div class="widget">
     <div class="widget-button z-depth-2 " [ngClass]="{ 'widget-button-stay' : 'open' == openCloseAll[3] }" (click)="openCloseWidget(3)">
-      <h3 class="widget-button-title text-center">How do I sign up? </h3>
+      <h3 class="widget-button-title text-center">Do I need to sign a contract to get a service? </h3>
     </div>
     <div class="widget-pannel container " [@expandCollapse]='openCloseAll[3]'>
-      <div class="widget-pannel-content">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio suscipit, saepe hic itaque excepturi sit a! Facere
-          ex rerum id assumenda quasi eaque inventore pariatur nihil velit est, perspiciatis voluptas!</p>
+      <div class="widget-pannel-description col-md-8 offset-md-2">
+        <p> You do not need to sign a contract, but if you are selecting a recurring service you will have to fill out a service price agreement form.</p>
       </div>
     </div>
   </div>
   <!-- How far in advance can I sign up? Widget [4]-->
   <div class="widget">
     <div class="widget-button z-depth-2 " [ngClass]="{ 'widget-button-stay' : 'open' == openCloseAll[4] }" (click)="openCloseWidget(4)">
-      <h3 class="widget-button-title text-center">How far in advance can I sign up?</h3>
+      <h3 class="widget-button-title text-center">Can I pay with my Credit Card?</h3>
     </div>
     <div class="widget-pannel container " [@expandCollapse]='openCloseAll[4]'>
-      <div class="widget-pannel-content">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio suscipit, saepe hic itaque excepturi sit a! Facere
-          ex rerum id assumenda quasi eaque inventore pariatur nihil velit est, perspiciatis voluptas!</p>
+      <div class="widget-pannel-description col-md-8 offset-md-2">
+        <p>Yes, we currently accept Cash, Master Card, Visa, and American Express as a form of payment.</p>
       </div>
     </div>
   </div>

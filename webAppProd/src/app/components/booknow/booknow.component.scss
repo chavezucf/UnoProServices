@@ -20,21 +20,22 @@
     margin-bottom: 0.5em;
 }
 
-.about-banner  {
-    background: linear-gradient(rgba(30,0,0,.4),rgba(30,0,0,.4)), url('../../../assets/images/test/about.jpg');
+.book-banner  {
+    background: linear-gradient(rgba(30,0,0,.4),rgba(30,0,0,.4)), url('../../../assets/images/test/kitchen.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-.about-banner-list  {
+.book-banner-list  {
     margin-top: -3em;
     margin-bottom: 3em;
 }
 
-.about-banner-list i{
+.book-banner-list i{
     margin: 10px; 
 }
+
 
 @media (max-width:568px) {
     .banner h3 {
@@ -54,12 +55,10 @@
 
 @media (min-width:1000px) {
 
-    .about-banner {
+    .book-banner {
         background-attachment: fixed;
     }
 }
-
-
 
 
 .btn:hover {
@@ -105,7 +104,6 @@
 }
 
 .divder-list i{
-    //color: rgb(20, 20, 120) !important;
     margin: 10px; 
 }
 
@@ -114,43 +112,14 @@
 
 }
 
-
-.about-container {
+.book-container {
     margin-top: 1em;
     margin-bottom: 1em;
     padding: 4em;
 }
-
-.about-container p{
+.book-container p, .book-container li{
     font-size: 25px;
 }
-
-.about-container i{
-    font-size: 25px;
-    font-weight: 400 !important;
-    color: rgb(20, 20, 120) !important;
-    text-decoration: underline;
-    font-style: italic;
-}
-
-
-@media (max-width:568px) {
-    .divder-container{
-        margin-top: 6em;
-        padding: 0em;
-    }
-
-    .about-container {
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
-        padding: 2em;
-    }
-    
-    .about-container p{
-        font-size: 20px;
-    }
-    
-    .about-container i{
-        font-size: 20px;
-    }
+.book-container .li-title {
+    font-weight: 700 !important;
 }

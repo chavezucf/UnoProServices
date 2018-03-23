@@ -75,10 +75,10 @@
     height: 350px;
 }
 .divder-container{
-    margin-top: 2em;
     padding: 2em;
 }
 .divder h3 {
+    margin-top: 1em;
     color: #ccc;
     font-family: 'Arima Madurai', cursive;
     font-size: 50px;
@@ -90,10 +90,9 @@
     }
 
     .divder-small {
-        height: 175px;
+        height: 205px;
     }
     .divder-container{
-        margin-top: 1em;
         padding: 0.5em;
     }
     .divder h3 {
@@ -101,17 +100,17 @@
     }
 }
 
-@media (min-width:568px) and (max-width:868px) {
+@media (min-width:568px) and (max-width:1000px) {
 
     .divder-small {
         height: 225px;
     }
 
     .divder-container{
-        margin-top: 1em;
         padding: 0.5em;
     }
     .divder h3 {
+        margin-top: 0.5em;
         font-size: 40px;
     }
 }

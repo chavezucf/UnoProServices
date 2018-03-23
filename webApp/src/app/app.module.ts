@@ -26,7 +26,7 @@ import { FaqComponent } from './components/faq/faq.component';
 import { ServicesComponent } from './components/services/services.component';
 import { AboutComponent } from './components/about/about.component';
 import { BooknowComponent } from './components/booknow/booknow.component';
-import { ContactusComponent } from './components/contactus/contactus.component';
+//import { ContactusComponent } from './components/contactus/contactus.component';CONTACT US IS HIDDEN
 import { AdminloginComponent } from './components/adminlogin/adminlogin.component';
 
 const appRoutes: Routes = [
@@ -35,7 +35,7 @@ const appRoutes: Routes = [
   { path: 'faq', component: FaqComponent},
   { path: 'booknow', component: BooknowComponent},
   { path: 'about', component: AboutComponent},
-  { path: 'contactus', component: ContactusComponent},
+  //{ path: 'contactus', component: ContactusComponent},CONTACT US IS HIDDEN
   { path: 'adminlogin', component: AdminloginComponent},
 ];
 
@@ -49,7 +49,7 @@ const appRoutes: Routes = [
     ServicesComponent,
     AboutComponent,
     BooknowComponent,
-    ContactusComponent,
+    //ContactusComponent, CONTACT US IS HIDDEN
     AdminloginComponent
   ],
   imports: [

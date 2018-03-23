@@ -144,7 +144,15 @@
 }
 
 .widget-pannel-description{
-    padding-bottom: 20px;
+    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+@media (max-width:568px) {
+    .widget-pannel-description{
+        font-size: 18px;
+    }
 }
 
 .widget-pannel-content{

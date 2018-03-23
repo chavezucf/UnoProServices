@@ -219,6 +219,16 @@
     padding-bottom: 20px;
 }
 
+@media (max-width:568px) {
+    .widget-pannel-description{
+        font-size: 22px;
+        padding-bottom: 0px;
+    }
+    .widget-pannel-title{
+        font-size: 22px;
+    }
+}
+
 .widget-pannel-content{
 
 }
