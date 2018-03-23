@@ -113,6 +113,13 @@
 
 }
 
+@media (max-width:568px) {
+
+    .divder {
+        display: none;
+    }
+}
+
 .collapse-faq {
 }
 
@@ -151,7 +158,14 @@
 
 @media (max-width:568px) {
     .widget-pannel-description{
+        font-size: 22px;
+        padding-bottom: 0px;
+    }
+    .widget-pannel-title{
         font-size: 18px;
+    }
+    .widget-button-title{
+        font-size: 20px;
     }
 }
 

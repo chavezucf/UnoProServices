@@ -60,6 +60,8 @@
 }
 
 
+
+
 .btn:hover {
     color: white !important;
     background:rgb(120, 20, 20)!important;
@@ -112,6 +114,7 @@
 
 }
 
+
 .about-container {
     margin-top: 1em;
     margin-bottom: 1em;
@@ -128,4 +131,26 @@
     color: rgb(20, 20, 120) !important;
     text-decoration: underline;
     font-style: italic;
+}
+
+
+@media (max-width:568px) {
+    .divder-container{
+        margin-top: 6em;
+        padding: 0em;
+    }
+
+    .about-container {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        padding: 2em;
+    }
+    
+    .about-container p{
+        font-size: 20px;
+    }
+    
+    .about-container i{
+        font-size: 20px;
+    }
 }

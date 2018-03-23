@@ -44,7 +44,7 @@
     }
 }
 
-@media (min-width:568px) and (max-width:868px) {
+@media (min-width:568px) and (max-width:1000px) {
 
     .banner h3 {
         font-size: 95px;
@@ -122,4 +122,21 @@
 }
 .book-container .li-title {
     font-weight: 700 !important;
+}
+
+@media (max-width:568px) {
+    .divder-container{
+        margin-top: 6em;
+        padding: 0em;
+    }
+
+    .book-container {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        padding: 2em;
+    }
+    
+    .book-container p, .book-container li{
+        font-size: 20px;
+    }
 }
