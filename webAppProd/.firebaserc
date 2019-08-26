@@ -1,6 +1,0 @@
-{
-  "projects": {
-    "default": "unoproservicesweb",
-    "Prod": "unoproservicesprod"
-  }
-}

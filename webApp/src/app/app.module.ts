@@ -12,9 +12,11 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 
 import { environment } from '../environments/environment';
 import * as firebase from 'firebase/app';
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireAuthModule } from 'angularfire2/auth';
-import { AngularFirestore, AngularFirestoreDocument } from 'angularfire2/firestore';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+
 
 import { AuthService } from './core/auth.service';
 
